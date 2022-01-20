@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilline</title>
+    <!-- Bootstrap | CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar py-0 opacity-navbar navbar-expand-md navbar-light bg-home-custom shadow fixed-top">
+        <div class="container-fluid px-5 py-2">
+            <a class="navbar-brand" href="#home">
+                <img src="./images/brand.png" class="img-fluid home-brand" alt="brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#careers">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-button mx-4 rounded-pill btn bg-white" type="button"
+                            href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-white-custom navbar-button rounded-pill btn btn-orange-custom"
+                            type="button" href="#">Sign Up</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Home section -->
+    <section class="home bg-home-custom" id="home">
+        <div class="container">
+            <div class="row flex-column-reverse flex-md-row text-center text-md-start">
+                <div class="col-12 col-md-5 home-column">
+                    <h1 class="heading-orange-custom d-inline pt-5">Studying</h1>
+                    <h1 class="d-inline heading-darkblue-custom">Online is now</h1>
+                    <h1 class="pb-5 heading-darkblue-custom">much easier</h1>
+                    <p class="mb-0 mt-2 heading-grey-custom">Skilline is an interesting platform that will teach</p>
+                    <p class="pb-5 heading-grey-custom">you in more an interactive way</p>
+                    <div class="row">
+                        <div class="col-5 mt-2">
+                            <!-- <button type="button" class="btn-white-custom btn rounded-pill btn-orange-custom">
+                                Join for free
+                            </button> -->
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn-white-custom btn rounded-pill btn-orange-custom"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Join for free
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Join for free</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputName" class="form-label">First name</label>
+                                                    <input type="text" class="form-control" id="exampleInputName">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputLastname" class="form-label">Last
+                                                        name</label>
+                                                    <input type="text" class="form-control" id="exampleInputLastname">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">We'll never share your email
+                                                        with anyone else.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-7 mb-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn circle-home btn-blue-custom float-start" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                                </svg>
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-fullscreen">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel4">Watch</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="p-5">
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <button class="btn circle-home btn-blue-custom float-start" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                                    class="bi bi-play-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                                </svg>
+                            </button> -->
+                            <p class="ms-3 mt-3 heading-dark-custom">Watch how it works</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <img src="./images/home-girl.png" alt="Head image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home section -->
+
+    <!-- Company section -->
+    <section class="company" id="company">
+        <div class="container pb-5">
+            <h6 class="text-center pb-5 heading-blueblue-custom">Trusted by 5,000+ Companies Worldwide</h6>
+            <div class="row pb-5">
+                <div class="col-4 col-md-2">
+                    <img src="./images/google.png" alt="google" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./images/netflix.png" alt="netflix" class="img-fluid">
+                </div>
+                <div class="col-4 company-md-pad col-md-2">
+                    <img src="./images/airbnb.png" alt="airbnb" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./images/amazon.png" alt="amazon" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./images/facebook.png" alt="facebook" class="img-fluid">
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="./images/grab.png" alt="grab" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company section -->
+
+    <!-- All-in-one -->
+    <section class="all-in-one" id="all-in-one">
+        <div class="container pb-5 text-center">
+            <h1 class="pt-5 d-inline heading-darkblue-custom">All-In-One</h1>
+            <h1 class="heading-orange-custom d-inline">Cloud Software.</h1>
+            <p class="pb-5 pt-3 heading-blueblue-custom">Skilline is one powerful online software suite that combines
+                all the tools needed to run a successful school or office.</p>
+            <div class="row text-center">
+                <div class="col-10 offset-1 col-md-4 offset-md-0 mb-3 mb-md-0 d-flex justify-content-evenly">
+                    <div class="card align-items-center mt-4 border-0 shadow" style="width: 20rem;">
+                        <img src="./images/Group 79.png" class="card-img-top all-in-one-img" class="rounded-circle"
+                            alt="group 79">
+                        <div class="card-body">
+                            <h5 class="card-title heading-darkblue-custom">Online Billing, Invoicing, & Contracts</h5>
+                            <p class="card-text heading-blueblue-custom">Simple and secure control of your
+                                organization's financial and legal transactions. Send customized invoices and contracts
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-4 offset-md-0 mb-3 mb-md-0 d-flex justify-content-evenly">
+                    <div class="card align-items-center mt-4 border-0 shadow" style="width: 20rem;">
+                        <img src="./images/Group 80.png" class="card-img-top all-in-one-img" class="rounded-circle"
+                            alt="group 80">
+                        <div class="card-body">
+                            <h5 class="card-title heading-darkblue-custom">Easy Scheduling & Attendance Tracking</h5>
+                            <p class="card-text heading-blueblue-custom">Schedule and reserve classrooms at one campus
+                                or multiple campuses. Keep detailed records of student attendance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10 offset-1 col-md-4 offset-md-0 mb-3 mb-md-0 d-flex justify-content-evenly">
+                    <div class="card align-items-center mt-4 border-0 shadow" style="width: 20rem;">
+                        <img src="./images/Group 81.png" class="card-img-top all-in-one-img" class="rounded-circle"
+                            alt="group 81">
+                        <div class="card-body">
+                            <h5 class="card-title heading-darkblue-custom">Customer Tracking</h5>
+                            <br>
+                            <p class="card-text heading-blueblue-custom">Automate and track emails to individuals or
+                                groups. Skilline's built-in system helps organize your organization</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- All-in-one -->
+
+    <!-- What is Skilline -->
+    <section class="skilline" id="skilline">
+        <div class="container pt-5 pb-5 text-center">
+            <h1 class="pb-5 d-inline heading-darkblue-custom">What is</h1>
+            <h1 class="heading-orange-custom d-inline">Skilline?</h1>
+            <p class="pb-5 pt-4 heading-blueblue-custom">
+                Skilline is a platform that allows educators to create online classes whereby they can store the course
+                materials online;
+                manage assignments, quizzes and exams; monitor due dates; grade results and provide students with
+                feedback all in one place.
+            </p>
+            <div class="row pb-5">
+                <div class="col-12 what-pad col-lg-6 d-flex justify-content-evenly">
+                    <img src="./images/Rectangle 19.png" class="img-fluid" alt="rectangle 19">
+                    <div class="skilline-text vstack mx-auto skilline-buttons-xs">
+                        <h2 class="pb-3">FOR INSTRUCTORS</h2>
+                        <button class="btn rounded-pill btn-outline-light text-wrap" type="button">Start a class
+                            today</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-evenly">
+                    <img src="./images/Rectangle 21.png" class="img-fluid" alt="rectangle 21">
+                    <div class="skilline-text vstack mx-auto skilline-buttons-xs">
+                        <h2 class="pb-3">FOR STUDENTS</h2>
+                        <button class="btn rounded-pill btn-soblue-custom opacity-75 text-wrap" type="button">Enter
+                            access code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- What is Skilline -->
+
+    <!-- You can do with Skilline -->
+    <section class="you-can-skilline" id="you-can-skilline">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="d-inline heading-darkblue-custom">Everything you can do in a physical classroom,</h2>
+                    <h2 class="heading-orange-custom pb-4 d-inline">you can do with Skilline</h2>
+                    <p class="pb-4 heading-blueblue-custom">
+                        Skilline's school management software helps traditional and online schools manage scheduling,
+                        attendance, payments and
+                        virtual classrooms all in one secure cloud-based system.
+                    </p>
+                    <a href="#" class="link-secondary">Learn more</a>
+                    <br><br>
+                </div>
+                <div class="col-12 col-lg-6 d-flex justify-content-evenly">
+                    <img src="./images/confident2.png" class="img-fluid" alt="confident 2">
+                    <div class="skilline-text vstack mx-auto">
+                        <button class="btn circle-home btn-blue-custom float-start text-wrap" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                                class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- You can do with Skilline -->
+
+    <!-- Our Features -->
+    <section class="our-features" id="careers">
+        <div class="container pt-5 text-center">
+            <h1 class="pb-4 d-inline heading-darkblue-custom">Our </h1>
+            <h1 class="heading-orange-custom d-inline">Features</h1>
+            <p class="text-center pt-4 pb-5 heading-blueblue-custom">This very extraordinary feature, can make learning
+                activities more efficient</p>
+            <div class="row pt-5">
+                <div class="col-12 col-lg-8 pb-5">
+                    <img src="./images/Group 71.png" class="img-fluid" alt="group 71">
+                </div>
+                <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
+                    <div class="text-start">
+                        <h2 class="pb-4 d-inline heading-darkblue-custom">A</h2>
+                        <h2 class="d-inline heading-orange-custom">user interface</h2>
+                        <h2 class="d-inline heading-darkblue-custom">designed for the classroom</h2>
+                        <div class="col-12 pt-4">
+                            <button class="btn circle float-start" type="button"><img src="./images/Group 72.png"
+                                    class="img-fluid float-start" alt="group 72"></button>
+                            <p class="ms-3 heading-blueblue-custom">Teachers don't get lost in the grid view and have a
+                                dedicated Podium space.</p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn circle float-start" type="button"><img src="./images/Group 73.png"
+                                    class="img-fluid float-start" alt="group 73"></button>
+                            <p class="heading-blueblue-custom">TA's and presenters can be moved to the front of the
+                                class. <br> <br> </p>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn circle float-start" type="button"><img src="./images/users 2.png"
+                                    class="img-fluid float-start" alt="users 2"></button>
+                            <p class="heading-blueblue-custom">Teachers can easily see all students and class data at
+                                one time.</p>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-12 col-md-7 text-start justify-content-center d-flex flex-column">
+                    <div>
+                        <h1 class="d-inline heading-orange-custom">Tools</h1>
+                        <h1 class="d-inline heading-darkblue-custom">For Teachers And Learners</h1>
+                        <p class="pt-4 heading-blueblue-custom">
+                            Class has a dynamic set of teaching tools built to be deployed and used during class.
+                            Teachers can handout assignments in real-time for students to complete and submit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 pb-5">
+                    <img src="./images/Group 122.png" class="img-fluid" alt="group 122">
+                </div>
+                <div class="col-12 col-md-5 pt-5 pb-5">
+                    <img src="./images/Group 92.png" class="img-fluid" alt="group 92">
+                </div>
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <div class="text-start">
+                        <h1 class="d-inline heading-darkblue-custom">Assessments,</h1>
+                        <h1 class="d-inline heading-orange-custom">Quizzes,</h1>
+                        <h1 class="d-inline heading-darkblue-custom">Tests</h1>
+                        <p class="heading-blueblue-custom">
+                            Easily launch live assignments, quizzes, and tests.
+                            Student results are automatically entered in the online gradebook.
+                        </p>
+                    </div>
+                    <br><br>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <div class="text-start">
+                        <h1 class="d-inline heading-orange-custom">Class Management </h1>
+                        <h1 class="d-inline heading-darkblue-custom">Tools for Educators</h1>
+                        <p class="heading-blueblue-custom">
+                            Class provides tools to help run and manage the class such as Class Roster, Attendance, and
+                            more. With the Gradebook,
+                            teachers can review and grade tests and quizzes in real-time.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pb-5">
+                    <img src="./images/Group 124.png" class="img-fluid" alt="group 124">
+                </div>
+                <div class="col-12 col-md-6 pb-5 pt-5">
+                    <img src="./images/Group 106.png" class="img-fluid" alt="group 106">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                    <div class="text-start">
+                        <h1 class="d-inline heading-darkblue-custom">One-on-One </h1>
+                        <h1 class="d-inline heading-orange-custom">Discussions</h1>
+                        <p class="heading-blueblue-custom">Teachers and teacher assistants can talk with students
+                            privately without leaving the Zoom environment.</p>
+                    </div>
+                </div>
+                <div class="col-12 pb-5 text-center">
+                    <button class="btn rounded-pill btn-outline-warning" type="button">See more features</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Features -->
+
+    <!-- Integrations -->
+    <section class="integration" id="integration">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7 pb-5 pt-5">
+                    <div class="row">
+                        <div class="col-6"><img src="./images/image 2.png" class="img-fluid mx-auto d-block"
+                                alt="image 2"></div>
+                        <div class="col-6"><img src="./images/image 5.png" class="img-fluid mx-auto d-block"
+                                alt="image 5"></div>
+                        <div class="col-6"><img src="./images/image 3.png" class="img-fluid mx-auto d-block"
+                                alt="image 3"></div>
+                        <div class="col-6"><img src="./images/image 6.png" class="img-fluid mx-auto d-block"
+                                alt="image 6"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
+                    <div>
+                        <h4 class="pb-3">INTEGRATIONS</h4>
+                        <h1 class="pb-3 d-inline heading-darkblue-custom">200+ educational tools and platform </h1>
+                        <h1 class="d-inline heading-orange-custom">integrations</h1>
+                        <p class="pb-3 pt-4 heading-blueblue-custom">
+                            Schoology has every tool your classroom needs and comes pre-integrated with more than 200+
+                            tools, student
+                            information systems (SIS), and education platforms.
+                        </p>
+                    </div>
+                    <div class="col-12 pb-5">
+                        <button class="btn rounded-pill btn-outline-warning" type="button">See All Integrations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Integrations -->
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container pb-5 pt-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <h4>TESTIMONIAL</h4>
+                    <h1 class="heading-darkblue-custom">What They Say?</h1>
+                    <p class="heading-blueblue-custom">Skilline has got more than 100k positive ratings from our users
+                        around the world.</p>
+                    <p class="heading-blueblue-custom">Some of the students and teachers were greatly helped by the
+                        Skilline.</p>
+                    <p class="heading-blueblue-custom">Are you too? Please give your assessment</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control btn-skill-custom btn-outline-warning"
+                            placeholder="Write your assessment" aria-label="Write your assessment"
+                            aria-describedby="button-addon2">
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-skill-custom btn-outline-warning" id="button-addon2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel2">TESTIMONIAL</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Your message will be answered soon!
+                                        <br>
+                                        Thank you for not wasting your time
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pt-5">
+                    <img src="./images/Testimonials.png" class="img-fluid" alt="testimonials">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+
+    <!-- News -->
+    <section class="news" id="blog">
+        <div class="container pb-5 pt-5">
+            <h1 class="text-center pb-3 heading-darkblue-custom">Lastest News and Resources</h1>
+            <p class="text-center pb-5 heading-blueblue-custom">See the developments that have occurred to Skillines in
+                the world</p>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <img src="./images/Rectangle 32.png" class="img-fluid pb-4" alt="rectangle 32">
+                    <button class="btn rounded-pill btn-warning" type="button">NEWS</button>
+                    <h2 class="pt-4 pb-4">Class adds $30 million to its balance sheet for a Zoom-friendly edtech
+                        solution</h2>
+                    <p class="pb-5 heading-blueblue-custom">Class, launched less than a year ago by Blackboard
+                        co-founder Michael Chasen, integrates exclusively...</p>
+                    <a href="#" class="link-secondary">Learn more</a>
+                    <br><br><br>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./images/Rectangle 33.png" class="img-fluid pb-4 news-img-mar float-start"
+                                alt="rectangle 33">
+                            <div class="skilline-text btn-news1 vstack mx-auto">
+                                <button class="btn rounded-pill btn-warning" type="button">PRESS RELEASE</button>
+                            </div>
+                            <h6 class="pb-4">Class Technologies Inc. Closes $30 Million Series A Financing to Meet High
+                                Demand</h6>
+                            <p class="heading-blueblue-custom">Class Technologies Inc., the company that created
+                                Class,...</p>
+                        </div>
+                        <div class="col-12">
+                            <img src="./images/Rectangle 34.png" class="img-fluid pb-4 news-img-mar float-start"
+                                alt="rectangle 34">
+                            <div class="skilline-text btn-news2 vstack mx-auto">
+                                <button class="btn rounded-pill btn-warning" type="button">NEWS</button>
+                            </div>
+                            <h6 class="pb-4">Zoom's earliest investors are betting millions on a better Zoom for schools
+                            </h6>
+                            <p class="heading-blueblue-custom">Zoom was never created to be a consumer product.
+                                Nonetheless, the...</p>
+                        </div>
+                        <div class="col-12">
+                            <img src="./images/Rectangle 37.png" class="img-fluid pb-4 news-img-mar float-start"
+                                alt="rectangle 37">
+                            <div class="skilline-text btn-news2 vstack mx-auto">
+                                <button class="btn rounded-pill btn-warning" type="button">NEWS</button>
+                            </div>
+                            <h6 class="pb-4">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms
+                            </h6>
+                            <p class="heading-blueblue-custom">This year, investors have reaped big financial returns
+                                from betting on Zoom...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- News -->
+
+    <!-- Footer -->
+    <footer class="footer" id="about-us">
+        <div class="container pt-5">
+            <div class="row pb-5">
+                <div class="col-12">
+                    <img src="./images/Group 115.png" width="300px" class="img-fluid mx-auto d-block" alt="group 155">
+                </div>
+            </div>
+            <h6 class="text-center heading-sogrey-custom">Subscribe to get our Newsletter</h6>
+            <div class="row pb-5 justify-content-center">
+                <div class="col-6 col-xl-3">
+                    <input type="email"
+                        class="form-control btn footer-greenbtn-custom btn-outline-secondary rounded-pill"
+                        id="exampleFormControlInput1" placeholder="Your Email">
+                </div>
+                <div class="col-2 col-xl-1">
+                    <!-- <button class="btn rounded-pill btn-primary" type="button">Subscribe</button> -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn rounded-pill btn-primary" id="button-addon2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">
+                        Subscribe
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel3">SUBSCRIBE</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Thank you for subscribing!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-secondary">Careers | Privacy Policy | Terms & Conditions</p>
+            <p class="text-center pb-4 mb-0 text-secondary">© 2021 Class Technologies Inc. </p>
+            <p class="text-center mb-0 text-secondary">All rights reserved | This template is made with by <a
+                    class="link-primary" href="https://t.me/LionnHeart">Sherali</a></p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap | JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

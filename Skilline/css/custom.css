@@ -1,0 +1,214 @@
+html{
+    scroll-behavior: smooth !important;
+}
+
+/* Navigation menu */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.opacity-navbar{
+    opacity: 0.95;
+}
+
+@media (max-width: 992px){
+    .what-pad{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-button{
+        margin-bottom: 1rem;
+    }
+
+    .company-md-pad{
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 420px){
+    .skilline-buttons-xs{
+        padding-top: 70px !important;
+    }
+    .skilline-text{
+        padding-top: 120px !important;
+    }
+}
+
+/* Font styles */
+h1, h2, h3, h4, h5, h6,
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button */
+.btn-skill-custom{
+    border-radius: 80px;
+}
+
+.btn-white-custom{
+    color: #FFFFFF !important;
+}
+
+.btn-blue-custom{
+    color: #23BDEE;
+}
+
+.btn-soblue-custom{
+    background-color: #23BDEE;
+    color: white;
+}
+
+.btn-orange-custom{
+    background: #F48C06 !important;
+
+}
+
+.footer-greenbtn-custom:hover{
+    background-color: #0f1033;
+}
+
+.heading-orange-custom{
+    color: #F48C06 !important;
+}
+
+.heading-darkblue-custom{
+    color: #2F327D;
+}
+
+.heading-grey-custom{
+    color: #464646;
+}
+
+.heading-dark-custom{
+    color: #252641;
+}
+
+.heading-blueblue-custom{
+    color: #696984;
+}
+
+.heading-sogrey-custom{
+    color: #B2B3CF;
+}
+
+/* Font styles */
+h1, h2, h3, h4, h5, h6,
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation menu */
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* .navbar-button{
+    padding: 0.5rem 2rem 0.5rem 2rem !important;
+} */
+
+/* Home */
+.home-brand{
+    height: 4rem;
+}
+
+.home{
+    padding: 100px 0 0px 0;
+}
+.home-column{
+    padding-top: 100px;
+}
+
+/* Background colors home */
+.bg-home-custom{
+    background-color: #FFF2E1;
+}
+
+/* Company */
+.company{
+    margin-top: 100px;
+}
+
+/* All-In-One */
+.all-in-one-img{
+    width: 100px !important;
+}
+
+/* What is Skilline */
+.skilline-text{
+    position: absolute;
+    padding-top: 150px;
+    color: #FFFFFF;
+}
+
+/* You can do with skilline */
+.you-can-box1{
+    position: absolute;
+    width: 9rem;
+    height: 8rem;
+    border-radius: 20px;
+    margin-left: -21em;
+    margin-top: -1.5rem;
+    z-index: -10;
+}
+
+.you-can-box2{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 20px;
+    margin-left: 17em;
+    margin-top: 6rem;
+    z-index: -10;
+}
+
+.you-can-img{
+    height: 290px;
+}
+
+.you-can-circle-button{
+    margin-top: 11px !important;
+    margin-left: 31px !important;
+}
+
+/* Our Features */
+.circle{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin-right: 30px;
+}
+
+.circle-home{
+    height: 3.3rem;
+    width: 3.3rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 30px;
+}
+
+/* News */
+.news-img-mar{
+    margin-right: 30px;
+}
+
+.btn-news1{
+    padding-left: 7rem;
+}
+.btn-news2{
+    padding-left: 11rem;
+}
+
+/* Footer */
+.footer{
+    background-color: #252641;
+    ;
+}
